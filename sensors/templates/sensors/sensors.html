@@ -1,0 +1,21 @@
+{% extends 'overview/base.html' %}
+
+{% block title %}Sensors{% endblock %}
+
+{% block content %}
+    <div id="sensors_top_container">
+        {% block sensors_top_nav_bar %}
+        <ul class="sensors_top">
+            <li class="topbaritem"><a href="/sensors/">List</a></li>
+            <li class="topbaritem"><a href="/sensors/create-sensor/">Add sensor</a></li>
+            <li class="topbaritem"><a href="/sensors/types/">List types</a></li>
+            <li class="topbaritem"><a href="/sensors/create-type/">Add type</a></li>
+        </ul>
+        {% endblock %}
+    </div>
+    <div id = "sensors_content">
+        {% block sensors_content %}
+        
+        {% endblock %}
+    </div>
+{% endblock %}

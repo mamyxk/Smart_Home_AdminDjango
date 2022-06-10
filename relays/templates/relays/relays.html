@@ -1,0 +1,21 @@
+{% extends 'overview/base.html' %}
+
+{% block title %}Relays{% endblock %}
+
+{% block content %}
+    <div id="relays_top_container">
+        {% block relays_top_nav_bar %}
+        <ul class="relays_top">
+            <li class="topbaritem"><a href="/relays/">List</a></li>
+            <li class="topbaritem"><a href="/relays/create-relay/">Add device</a></li>
+            <li class="topbaritem"><a href="/relays/types/">List types</a></li>
+            <li class="topbaritem"><a href="/relays/create-type/">Add type</a></li>
+        </ul>
+        {% endblock %}
+    </div>
+    <div id = "relays_content">
+        {% block relays_content %}
+        
+        {% endblock %}
+    </div>
+{% endblock %}

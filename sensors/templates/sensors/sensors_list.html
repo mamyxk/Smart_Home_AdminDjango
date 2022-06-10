@@ -1,0 +1,29 @@
+{% extends './sensors.html' %}
+
+{% block title %}Sensors Lists{% endblock %}
+
+{% block sensors_content %}
+    <table class="generic_sensors_table">
+        <tr>
+            <th>No.</th>
+            <th>HWID</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Type</th>
+            <th>Latest data</th>
+            <th>Edit</td>
+            <ht>Data types</th>
+        </tr>
+        {% for device in all_devices %}
+            <tr>
+                <td>{{ device.id }}</td>
+                <td>{{ device.hwid }}</td>
+                <td>{{ device.name }}</td>
+                <td>{{ device.description }}</td>
+                <td>{{ device.type_id.name }}</td>
+                <td>Now</td>
+                <td><a href=./edit-sensor/{{device.id}}/>Edit</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

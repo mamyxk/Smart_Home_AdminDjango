@@ -1,0 +1,22 @@
+[
+    {
+        "model": "sensors.SensorDevices",
+        "pk": 1,
+        "fields":{
+            "hwid": 4,
+            "type_id": 1,
+            "name": "Kamil",
+            "description": "Czujnik temperatury w pokoju Kamila"
+        }
+    },
+    {
+        "model": "sensors.SensorDevices",
+        "pk": 2,
+        "fields":{
+            "hwid": 5,
+            "type_id": 1,
+            "name": "Łazienka 3",
+            "description": "Czujnik w łazience na 3 piętrze"
+        }
+    }
+]

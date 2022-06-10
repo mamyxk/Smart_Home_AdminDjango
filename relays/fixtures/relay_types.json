@@ -1,0 +1,29 @@
+[
+    {
+        "model": "relays.RelayTypes",
+        "pk": 1,
+        "fields":{
+            "name": "Single Relay ESP8266",
+            "description": "Single Relay ESP8266 WiFi device with 1 bus",
+            "buses": 1
+        }
+    },
+    {
+        "model": "relays.RelayTypes",
+        "pk": 2,
+        "fields":{
+            "name": "Double Relay ESP8266",
+            "description": "Double Relay ESP8266 WiFi device with 2 buses",
+            "buses": 2
+        }
+    },
+    {
+        "model": "relays.RelayTypes",
+        "pk": 3,
+        "fields":{
+            "name": "Four Relay ESP8266",
+            "description": "Four Relay ESP8266 WiFi device with 4 buses",
+            "buses": 4
+        }
+    }
+]

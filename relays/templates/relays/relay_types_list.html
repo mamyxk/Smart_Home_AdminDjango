@@ -1,0 +1,19 @@
+{% extends './relays.html' %}
+{% block relays_content %}
+<table class="generic_sensors_table">
+    <tr>
+        <th>No.</th>
+        <th>Name</th>
+        <th>Buses</th>
+        <th>Description</th>
+    </tr>
+    {% for type in all_types %}
+        <tr>
+            <td>{{ type.id }}</td>
+            <td>{{ type.name }}</td>
+            <td>{{ type.buses }}</td>
+            <td>{{ type.description }}</td>
+        </tr>
+    {% endfor %}
+</table>
+{% endblock %}

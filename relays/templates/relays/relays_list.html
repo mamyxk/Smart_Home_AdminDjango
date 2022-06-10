@@ -1,0 +1,23 @@
+{% extends './relays.html' %}
+{% block relays_content %}
+    <table class="generic_relays_table" id="relay_list">
+        <tr>
+            <th>No.</th>
+            <th>HWID</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Type</th>
+            <th>Edit</th>
+        </tr>
+        {% for device in all_devices %}
+            <tr>
+                <td>{{ device.id }}</td>
+                <td>{{ device.hwid }}</td>
+                <td>{{ device.name }}</td>
+                <td>{{ device.description }}</td>
+                <td>{{ device.type_id.name }}</td>
+                <td><a href=./edit-relay/{{device.id}}/0/>Edit</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

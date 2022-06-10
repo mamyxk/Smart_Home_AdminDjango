@@ -1,0 +1,22 @@
+[
+    {
+        "model": "relays.RelayDevices",
+        "pk": 1,
+        "fields":{
+            "name": "Main Heater Control",
+            "description": "Relay that controll Main Heater, when ON house heating is ON",
+            "hwid": 2,
+            "type_id": 1
+        }
+    },
+    {
+        "model": "relays.RelayDevices",
+        "pk": 2,
+        "fields":{
+            "name": "Light switch",
+            "description": "Relay that controll Main Heater, when ON house heating is ON",
+            "hwid": 3,
+            "type_id": 1
+        }
+    }
+]

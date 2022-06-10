@@ -1,0 +1,163 @@
+body {
+    background-color: rgb(189, 193, 198);
+}
+
+:link,:visited {
+    all: unset;
+}
+
+#topnavbar{
+    background-color: rgb(53,53,53);
+    margin-right: 0;
+    margin-left: 0;
+}
+.topbarlist{
+    /* margin-left: auto; */
+    padding-left: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.topbarlist li{
+    display: inline-block;
+    margin: 0;
+}
+
+.topbarlist li a{
+    padding: 0px 20px 0px 20px;
+    color: rgb(220,220,220);
+}
+
+.topbaritem :first{
+    margin-left: 20px;
+}
+
+.topbarlist li :hover{
+    background-color: rgb(220,220,220);
+    color: rgb(10,10,10);
+    cursor:pointer;
+}
+
+#relays_top_container{
+    background-color: rgb(130, 134, 130);
+}
+
+.relays_top{
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-left: auto; */
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.relays_top li{
+    display: inline-block;
+    margin: 0;
+}
+
+.relays_top li a{
+    padding: 0px 20px 0px 20px;
+    color: rgb(220,220,220);
+}
+
+.relays_top :first{
+    margin-left: 20px;
+}
+
+.relays_top li :hover{
+    background-color: rgb(220,220,220);
+    color: rgb(10,10,10);
+    cursor:pointer;
+}
+
+#sensors_top_container{
+    background-color: rgb(130, 134, 130);
+}
+
+.sensors_top{
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-left: auto; */
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.sensors_top li{
+    display: inline-block;
+    margin: 0;
+}
+
+.sensors_top li a{
+    padding: 0px 20px 0px 20px;
+    color: rgb(220,220,220);
+}
+
+.sensors_top :first{
+    margin-left: 20px;
+}
+
+.sensors_top li :hover{
+    background-color: rgb(220,220,220);
+    color: rgb(10,10,10);
+    cursor:pointer;
+}
+
+.generic_relays_table{
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 0px;
+    min-width: 800px;
+    width: auto;
+}
+
+.generic_relays_table th{
+    background-color: rgb(55, 143, 44);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.generic_relays_table tr:nth-child(2n){
+    background-color: rgb(50, 87, 45);
+    text-align: right;
+}
+
+.generic_relays_table tr:nth-child(2n+1){
+    background-color: rgb(130, 134, 130);
+    text-align: right;
+}
+
+.generic_sensors_table{
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 0px;
+    min-width: 800px;
+    width: auto;
+}
+
+.generic_sensors_table th{
+    background-color: rgb(55, 143, 44);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.generic_sensors_table tr:nth-child(2n){
+    background-color: rgb(50, 87, 45);
+    text-align: right;
+}
+
+.generic_sensors_table tr:nth-child(2n+1){
+    background-color: rgb(130, 134, 130);
+    text-align: right;
+}

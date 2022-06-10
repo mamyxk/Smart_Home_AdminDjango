@@ -1,0 +1,8 @@
+{% extends './relays.html' %}
+{% block relays_content %}
+<form action="" method="post">
+        {% csrf_token %}
+        {{ create_relay_form }}
+        <input type="submit" value="Add">
+</form>
+{% endblock %}

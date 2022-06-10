@@ -1,0 +1,38 @@
+{% extends './relays.html' %}
+{% block relays_content %}
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ edit_relay_form }}
+        <input type="submit" value="Edit">
+    </form>
+    <p>
+        Buses
+    </p>
+    {% block relays_trigger_content %}
+        <table>
+            <tr>
+                {% for relay_bus_btn in relay_buses_btns %}
+                    <td>
+                        <a href="/relays/edit-relay/{{ relay_id }}/{{ relay_bus_btn.0 }}/">{{ relay_bus_btn.1 }}</a></>
+                    {% endfor %}
+                </tr>
+            </table>
+            {% if edit_relay_bus_form %}
+                <form action="./edit_bus_trigger/" method="post">
+                    {% csrf_token %}
+                    {{ edit_relay_bus_form }}
+                    <input type="submit" value="Set">
+                </form>
+                <form action="./edit_bus_trigger_time/" method="post">
+                    {% csrf_token %}
+                    {{ edit_time_trigger_form }}
+                    <input type="submit" value="Edit">
+                </form>
+            {% else %}
+                <form action="./create_bus_trigger/" method="post">
+                    {% csrf_token %}
+                    <input type="submit" value="Create default Trigger">
+                </form>
+            {% endif %}
+        {% endblock relays_trigger_content %}
+    {% endblock %}

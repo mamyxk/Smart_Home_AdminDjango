@@ -1,0 +1,80 @@
+[
+    {
+        "model": "sensors.SensorDataType",
+        "pk": 1,
+        "fields":{
+            "name": "Temperature Celcius"
+        }
+    },
+    {
+        "model": "sensors.SensorDataType",
+        "pk": 2,
+        "fields":{
+            "name": "Humidity"
+        }
+    },
+    {
+        "model": "sensors.SensorTypes",
+        "pk": 1,
+        "fields":{
+            "name": "ESP8266-01_DHT22",
+            "description": "ESP8266-01 with DHT22 temperature and humidity sensors."
+        }
+    },
+    {
+        "model": "sensors.SensorTypes",
+        "pk": 2,
+        "fields":{
+            "name": "ESP8266-01_DHT11",
+            "description": "ESP8266-01 with DHT11 temperature and humidity sensors."
+        }
+    },
+    {
+        "model": "sensors.SensorTypes",
+        "pk": 3,
+        "fields":{
+            "name": "ESP8266-01_DS18B20",
+            "description": "ESP8266-01 with DS18B20 temperature sensor."
+        }
+    },
+    {
+        "model": "sensors.SensorInputTypes",
+        "fields":{
+            "type_id": 1,
+            "data_id": 1,
+            "precision": 0.01
+        }
+    },
+    {
+        "model": "sensors.SensorInputTypes",
+        "fields":{
+            "type_id": 1,
+            "data_id": 2,
+            "precision": 0.01
+        }
+    },
+    {
+        "model": "sensors.SensorInputTypes",
+        "fields":{
+            "type_id": 2,
+            "data_id": 1,
+            "precision": 1
+        }
+    },
+    {
+        "model": "sensors.SensorInputTypes",
+        "fields":{
+            "type_id": 2,
+            "data_id": 2,
+            "precision": 1
+        }
+    },
+    {
+        "model": "sensors.SensorInputTypes",
+        "fields":{
+            "type_id": 3,
+            "data_id": 1,
+            "precision": 0.01
+        }
+    }
+]

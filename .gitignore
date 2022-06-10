@@ -1,0 +1,6 @@
+.venv
+.idea
+__pycache__
+migrations
+workspace.code-workspace
+db.sqlite3

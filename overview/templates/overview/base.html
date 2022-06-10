@@ -1,0 +1,26 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <title>{% block title %}Overview{% endblock %}</title>
+</head>
+
+<body>
+    <div id="topnavbar">
+        {% block topnavbar %}
+        <ul class="topbarlist">
+            <li><a href="/">Overview</a></li>
+            <li><a href="/relays/">Relays</a></li>
+            <li><a href="/sensors/">Sensors</a></li>
+            <li><a href="/triggers/">Triggers</a></li>
+        </ul>
+        {% endblock %}
+    </div>
+
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
